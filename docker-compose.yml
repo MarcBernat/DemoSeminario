@@ -23,7 +23,17 @@ services:
     environment:
       WORDPRESS_DB_PASSWORD: example
 
+ owncloud:
+    image: owncloud
+    ports:
+      - 8084:80
+
   mysql:
     image: mariadb
     environment:
       MYSQL_ROOT_PASSWORD: example
+
+  owncloud:
+    image: owncloud
+    ports:
+      - 8088:80
