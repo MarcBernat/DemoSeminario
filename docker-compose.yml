@@ -23,7 +23,7 @@ services:
     environment:
       WORDPRESS_DB_PASSWORD: example
 
- owncloud:
+  owncloud:
     image: owncloud
     ports:
       - 8084:80
